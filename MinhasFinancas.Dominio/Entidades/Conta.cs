@@ -18,4 +18,9 @@ public class Conta(String nome, decimal saldoInicial)
         if (valor > Saldo) throw new InvalidOperationException("Saldo insuficiente");
         Saldo -= valor;
     }
+
+    public void AjustarSaldo(ValorMonetario novoSaldo)
+    {
+        Saldo = novoSaldo;
+    }
 }
