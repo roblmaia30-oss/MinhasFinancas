@@ -11,7 +11,6 @@ public enum TipoTransacao
 public enum MetodoPagamento
 {
     Dinheiro,
-    CartaoDebito,
+    Debito,
     CartaoCredito,
-    Pix
 }
