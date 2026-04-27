@@ -1,5 +1,7 @@
 ﻿using MinhasFinancas.Dominio.Entidades;
 
+namespace MinhasFinancas.Dominio.Servicos;
+
 public class CalculadoraFinanceira
 {
     public static decimal CalcularSaldoDisponivelParaGastar(List<Conta> contas, List<CartaoCredito> cartoes)
