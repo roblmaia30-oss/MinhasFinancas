@@ -10,17 +10,19 @@ public class Transacao
     public DateTime Data { get; private set; }
     public TipoTransacao Tipo { get; private set; }
     public MetodoPagamento Metodo { get; private set; }
-    
+    public bool EstaPago { get; private set; }
+
     public Guid? ContaId { get; private set; }
     public Guid? CartaoId { get; private set; }
     public Guid? CategoriaId { get; private set; }
 
     public Transacao(
-        Texto descricao, 
-        ValorMonetario valor, 
-        DateTime data, 
-        TipoTransacao tipo, 
+        Texto descricao,
+        ValorMonetario valor,
+        DateTime data,
+        TipoTransacao tipo,
         MetodoPagamento metodo,
+        bool estaPago = false,
         Guid? contaId = null,
         Guid? cartaoId = null,
         Guid? categoriaId = null)
@@ -38,5 +40,12 @@ public class Transacao
         ContaId = contaId;
         CartaoId = cartaoId;
         CategoriaId = categoriaId;
+        EstaPago = estaPago;
+    }
+
+    public void ConfirmarPagamento()
+    {
+        if (EstaPago) throw new InvalidOperationException("Esta transação já foi paga.");
+        EstaPago = true;
     }
 }
