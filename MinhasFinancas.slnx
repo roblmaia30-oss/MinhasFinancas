@@ -3,4 +3,5 @@
   <Project Path="MinhasFinancas.ConsoleUI/MinhasFinancas.ConsoleUI.csproj" />
   <Project Path="MinhasFinancas.Dominio/MinhasFinancas.Dominio.csproj" />
   <Project Path="MinhasFinancas.Infraestrutura/MinhasFinancas.Infraestrutura.csproj" />
+  <Project Path="MinhasFinancas.Teste/MinhasFinancas.Teste.csproj" />
 </Solution>
