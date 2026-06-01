@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="MinhasFinancas.Api/MinhasFinancas.Api.csproj" />
   <Project Path="MinhasFinancas.Aplicacao/MinhasFinancas.Aplicacao.csproj" />
   <Project Path="MinhasFinancas.ConsoleUI/MinhasFinancas.ConsoleUI.csproj" />
   <Project Path="MinhasFinancas.Dominio/MinhasFinancas.Dominio.csproj" />
